@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>MTS_FoxTransfers</name>
+    <version>1.0.0.1</version>
+    <stability>stable</stability>
+    <license uri="http://www.gnu.org/licenses/gpl.html">GNU General Public License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>FoxTransfers payment module</summary>
+    <description>FoxTransfers - electronic payment system</description>
+    <notes>First version stable.</notes>
+    <authors><author><name>MTS</name><user>TomasMisiunas</user><email>tmisiunas@gmail.com</email></author></authors>
+    <date>2013-06-01</date>
+    <time>13:35:34</time>
+    <contents><target name="magelocal"><dir name="MTS"><dir name="Foxtransfers"><dir name="Block"><dir name="Pay"><file name="Form.php" hash="2bf98ba68aca4984a46a3844f202637c"/></dir></dir><dir name="Helper"><file name="Data.php" hash="6a9d24fe6f3ad248cc74f71c5b03f199"/></dir><dir name="Model"><file name="Actions.php" hash="2a8e1519b68d6fadb06313db0641adf1"/><file name="Foxtransferskey.php" hash="bb5c1f2a3d50ce4ab4d699ff24b2c1fc"/><file name="Foxtransferslogo.php" hash="7c6371d30654f0bb56a7cfca8acdc4e7"/><file name="PaymentMethod.php" hash="8abcb6ff128531c7aef63ad9c1aa83b4"/><file name="Privatekey.php" hash="3d22e89862e0dd3ca395ef86306e872a"/><file name="foxtransfers.php" hash="f84214fc43f665c79b92dc7a092b364f"/></dir><dir name="controllers"><file name="PayController.php" hash="6c52304e74df3f5493791b16d7a3f3b6"/></dir><dir name="etc"><file name="config.xml" hash="394a457808998a6d95bc904b4497ae16"/><file name="system.xml" hash="6f9b20150e1aaae7cbd798fae100ce11"/></dir><dir name="lib"><file name="FoxTransfersShop.class.php" hash="e1a8e754b5c13b2cbfe53033838c3385"/></dir><dir name="sql"><dir name="foxtransfers_setup"><file name="mysql4-install-1.0.0.php" hash="f84214fc43f665c79b92dc7a092b364f"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="foxtransfers"><file name="form.phtml" hash="3ab0f9f2b14f120f29fa77d5e3ee37ea"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="MTS_Foxtransfers.xml" hash="70878b23e596e46e0fd1473af5672b29"/></dir></target><target name="magemedia"><dir name="foxtransfers"><file name="FoxLogo.png" hash="0c5d0c9383002dccf764c028817e0a0d"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

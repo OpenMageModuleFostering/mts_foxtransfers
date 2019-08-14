@@ -1,0 +1,32 @@
+﻿<fieldset class="form-list">
+
+    <?php $_code = $this->getMethodCode(); ?>
+	<?php $logo = Mage::getStoreConfig('payment/foxtransfers/logo'); ?>
+
+	<ul id="payment_form_<?php echo $_code; ?>" style="display:none;">
+	
+		<table>
+		<tr>
+		
+		<td>
+			<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . DS . '/foxtransfers/FoxLogo.png'; ?>" onclick="payment.switchMethod('foxtransfers');document.getElementById('p_method_<?php echo $_code ?>').checked=true;" />
+		</td>
+		
+		<td style="padding: 0px 0px 0px 10px;">
+			
+			<?php echo $this->__('FoxTransfers.lt - electronic payment system.'); ?>
+			<br />
+			<?php echo $this->__('(SEB, SwedBank, DNB, Nordea, DanskeBank, Šiaulių bankas, Citadele, Medicinos bankas)'); ?>
+			<br />
+			<a href="http://www.foxtransfers.lt" title="<?php echo $this->__('FoxTransfers.lt - electronic payment system'); ?>" target="_blank" >
+				<?php echo $this->__('More about FoxTransfers.lt.'); ?>
+			</a>
+		
+		</td>
+		
+		</tr>
+		</table>
+		
+	</ul>
+	
+</fieldset>

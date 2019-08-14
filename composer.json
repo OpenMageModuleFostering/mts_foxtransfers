@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/MTS_FoxTransfers",
+    "type": "magento-module",
+    "license": "GNU-General-Public-License",
+    "homepage": "",
+    "description": "FoxTransfers payment module",
+    "authors": [
+    {
+        "name": "MTS",
+        "email": "tmisiunas@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

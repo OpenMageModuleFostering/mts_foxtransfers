@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<modules>
+		<MTS_Foxtransfers>
+			<version>1.0.0</version>
+		</MTS_Foxtransfers>
+	</modules>
+
+	<global>
+
+		<blocks>
+			<foxtransfers>
+				<class>MTS_Foxtransfers_Block</class>
+			</foxtransfers>
+		</blocks>
+
+		<models>
+			<foxtransfers>
+				<class>MTS_Foxtransfers_Model</class>
+			</foxtransfers>
+		</models>
+
+		<helpers>
+			<foxtransfers>
+				<class>MTS_Foxtransfers_Helper</class>
+			</foxtransfers>
+		</helpers>
+	
+		<resources>
+
+			<foxtransfers_setup>
+				<setup>
+					<module>MTS_Foxtransfers</module>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</foxtransfers_setup>
+
+			<foxtransfers_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</foxtransfers_write>
+
+			<foxtransfers_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</foxtransfers_read>
+		
+		</resources>
+
+	</global>
+
+	<frontend>
+		<routers>
+			<foxtransfers>
+				<use>standard</use>
+				<args>
+					<module>MTS_Foxtransfers</module>
+					<frontName>foxtransfers</frontName>
+				</args>
+			</foxtransfers>
+		</routers>
+	</frontend>
+
+	<default>
+		<payment>
+			<foxtransfers>
+				<active>1</active>
+				<title>FoxTransfers.lt</title>
+				<username>sandbox</username>
+				<sendemail>1</sendemail>
+				<model>foxtransfers/paymentMethod</model>
+				<!--<order_status>processing</order_status>-->
+			</foxtransfers>
+		</payment>
+	</default>
+
+
+</config>
